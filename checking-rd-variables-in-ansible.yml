@@ -5,5 +5,5 @@
 
     - name: Check Date with Shell command
       shell:
-         echo "$RD_OPTION_HOSTNAME" > /tmp/t2.log
-         echo "$RD_OPTION_COMMAND"  >> /tmp/t2.log
+         echo "@option.command@" > /tmp/t2.log
+         echo "@option.hostname@"  >> /tmp/t2.log
