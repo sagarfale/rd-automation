@@ -1,6 +1,6 @@
 ---
 
-- hosts: $RD_OPTION_NODE 
+- hosts: ${option.Node} 
   tasks:
   - name: Creating a file with content
     copy:
