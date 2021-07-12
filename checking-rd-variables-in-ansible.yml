@@ -5,4 +5,4 @@
 
     - name: Check Date with Shell command
       shell:
-         echo " {{ v_host }}" > /tmp/t2.log
+         hostname
