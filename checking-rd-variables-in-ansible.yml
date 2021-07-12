@@ -5,5 +5,4 @@
 
     - name: Check Date with Shell command
       shell:
-         echo "@option.command@" > /tmp/t2.log
-         echo "@option.hostname@"  >> /tmp/t2.log
+         echo " {{ v_host }}" > /tmp/t2.log
