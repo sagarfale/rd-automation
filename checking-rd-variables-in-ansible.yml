@@ -6,4 +6,4 @@
     - name: Check Date with Shell command
       shell:
          echo "$RD_OPTION_HOSTNAME"
-         echo "$$RD_OPTION_COMMAND"
+         echo "$RD_OPTION_COMMAND"
