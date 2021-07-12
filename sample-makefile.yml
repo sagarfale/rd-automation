@@ -1,6 +1,6 @@
 ---
 
-- hosts: {{v_host}}
+- hosts: {{ @option.Node@ }}
   tasks:
   - name: Creating a file with content
     copy:
