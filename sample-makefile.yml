@@ -1,6 +1,6 @@
 ---
 
-- hosts: ${host_name}
+- hosts: {$v_host}
   tasks:
   - name: Creating a file with content
     copy:
