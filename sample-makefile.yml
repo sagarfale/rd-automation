@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: $RD_OPTION_NODE 
   tasks:
   - name: Creating a file with content
     copy:
