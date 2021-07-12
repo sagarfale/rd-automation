@@ -5,4 +5,4 @@
 
     - name: Check Date with Shell command
       shell:
-         hostname
+         hostname > /tmp/t2.log
