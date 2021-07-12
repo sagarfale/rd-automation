@@ -3,6 +3,6 @@
     hosts: {{ v_host }}
     tasks:  
     - name: Clear Cache and Restart tomcat  
-      shell: |  
+      shell:  
  	echo $RD_OPTION_HOSTNAME > /tmp/t1.log
 	echo $$RD_OPTION_COMMAND >> /tmp/t1.log
