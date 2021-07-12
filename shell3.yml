@@ -1,0 +1,14 @@
+---
+- name: Shell Example
+  hosts: webnodes
+  tasks:
+    - name: Check date with Simple Example
+      shell: "{{cmds}}"
+      vars:
+       cmds: 
+        - hostname
+        - date 
+      register: datecmd
+      tags: datecmd
+
+    - debug: msg="{{datecmd.stdout}}"  
