@@ -1,6 +1,6 @@
 ---
   - name: Shell Examples
-    hosts: {{ v_host }}
+    hosts: "{{ v_host | default('') }}"
     tasks:
 
     - name: Check Date with Shell command
