@@ -1,4 +1,9 @@
-- name: Run expect to wait for a successful PXE boot via out-of-band CIMC
-  shell: 
-	- echo $RD_OPTION_HOSTNAME 
-	- echo $$RD_OPTION_COMMAND
+---
+  - name: Shell Examples
+    hosts: {{ v_host }}
+    tasks:
+
+    - name: Check Date with Shell command
+      shell:
+         echo "$RD_OPTION_HOSTNAME"
+         echo "$$RD_OPTION_COMMAND"
