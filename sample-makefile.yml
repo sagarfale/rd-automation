@@ -1,6 +1,6 @@
 ---
 
-- hosts: "@option.Node@" 
+- hosts: $host_list 
   tasks:
   - name: Creating a file with content
     copy:
