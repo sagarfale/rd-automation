@@ -4,7 +4,7 @@
   tasks:
   - name: Creating a file with content
     copy:
-      dest: "/tmp/sagar.txt_13July2021"
+      dest: "/tmp/sagar.txt"
       content: |
         line 01
         line 02
