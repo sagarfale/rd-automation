@@ -1,0 +1,10 @@
+- hosts: "{{ v_host | default('') }}"
+  gather_facts: no
+  vars:
+   run_cmd: "{{ v_cmd }}"
+  become: true
+  become_user: "{{ v_user }}"
+  tasks:
+  - name: "{{ run_cmd }}"
+    shell:
+          "{{ run_cmd }}"
