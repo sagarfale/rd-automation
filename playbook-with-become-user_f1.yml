@@ -1,0 +1,9 @@
+- hosts: anode1
+  gather_facts: no
+  become: true
+  become_user: oracle
+  tasks:
+  - name: " Running the command "
+    shell:
+          echo `id` > /tmp/id
+
