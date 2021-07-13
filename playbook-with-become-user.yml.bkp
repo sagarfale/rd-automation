@@ -1,9 +1,9 @@
----
-- hosts: anode1
+- hosts: " {{ v_hosts | default('') }} "
   gather_facts: no
   become: true
-  become_user: oracle
+  become_user: "{{ v_user }}"
   tasks:
-  - name: " Running the command "
+  - name: "{{ v_cmd }}"
     shell:
-        "df -h >  /tmp/sagar.txt"
+          "{{ v_cmd }}"
+

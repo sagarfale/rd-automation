@@ -1,4 +1,4 @@
-- hosts: "{{ v_hosts | default('') }}"
+- hosts: " {{ v_hosts | default('') }} "
   gather_facts: no
   become: true
   become_user: "{{ v_user }}"
