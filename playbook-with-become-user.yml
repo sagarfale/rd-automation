@@ -6,4 +6,4 @@
   tasks:
   - name: " Running the command "
     shell:
-         -  hostname
+        "df -h"
