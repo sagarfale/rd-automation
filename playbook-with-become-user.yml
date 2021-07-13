@@ -1,7 +1,7 @@
 - hosts: "{{ v_hosts | default('') }}"
   gather_facts: no
   become: true
-  become_user: oracle
+  become_user: "{{ v_user }}"
   tasks:
   - name: "{{ v_cmd }}"
     shell:
