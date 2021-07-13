@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ v_host | default('') }}"
+- hosts: anode1
   gather_facts: no
   become: true
   become_user: oracle
