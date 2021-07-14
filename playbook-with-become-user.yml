@@ -1,6 +1,7 @@
 - hosts: "{{ v_hosts | default('') }}"
   gather_facts: no
   become: true
+  become_method: su
   become_user: "{{ v_user }}"
   tasks:
   - name: "{{ v_cmd }}"
