@@ -1,0 +1,33 @@
+
+# tasks file for apache
+- name: install {{ pkg }}
+  yum:
+    name: "{{ pkg }}"
+    state: latest
+
+- name: enable and start {{ srv }}
+  service:
+    name: "{{ srv }}"
+    state: started
+    enabled: yes
+
+- name: copy document root
+  copy:
+    src: file1.html
+    dest: /var/www/html/file1.html
+    owner: apache
+    group: apache
+   # mode:0664
+
+- name: copy template file
+  template:
+    src: hostinfo.j2
+    dest: /var/www/html/hostinfo.html
+
+- name: replace in config file
+  replace:
+    path: /etc/httpd/conf/httpd.conf
+    regexp: "custom.html"
+    replace: "file1.html"
+  notify: restart_apache
+
