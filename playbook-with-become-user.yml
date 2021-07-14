@@ -3,7 +3,7 @@
   become: true
   become_user: oracle
   tasks:
-  - name: "{{ v_cmd }}"
+  - name: hostname
     shell:
-          "{{ v_cmd }}"
+          hostname
 
