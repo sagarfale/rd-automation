@@ -1,7 +1,7 @@
 - hosts: anode1
   gather_facts: no
   become: true
-  become_user: "{{ v_user }}"
+  become_user: oracle
   tasks:
   - name: "{{ v_cmd }}"
     shell:
