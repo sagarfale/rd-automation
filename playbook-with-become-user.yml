@@ -6,5 +6,5 @@
   tasks:
   - name: "{{ v_cmd }}"
     shell:
-          "ls -ltr /tmp"
+          " {{ v_user }}"
 
