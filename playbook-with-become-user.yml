@@ -6,5 +6,5 @@
   tasks:
   - name: "{{ v_cmd }}"
     shell:
-          " {{ v_user }}"
+          "{{ v_user }}"
 
